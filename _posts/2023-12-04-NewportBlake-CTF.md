@@ -5,7 +5,6 @@ date: 2023-12-04T02:16:50+07:00
 tags: [misc, osint]
 categories: [ctf]
 author: [1]
-image: https://ctftime.org/media/cache/c4/f9/c4f96272360aeafabf3eb30370379c8f.png
 ---
 
 CTF tournaments usually on weekends shorten my sleep time. But they're worth staying up late, aren't they? NewportBlake takes place at 7 AM on Dec 2, 2023 — ending at the same time Dec 4,2023 (ICT). I didn't do much, there were only two and they were pretty easy.
