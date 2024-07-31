@@ -1,20 +1,17 @@
 --- 
 title: "TexsawCTF 2024"
 date: 2024-03-25T17:31:00+07:00
-description: "Writeup for TexsawCTF 2024 challenges"
+# description: "Writeup for TexsawCTF 2024 challenges"
 tags: [forensics, osint]
 categories: [ctf]
 author : [1]
 ---
-<!--more-->
 
-## Overview 
-- Although the challenges of the tournament look simple, they are actually quite difficult and my way of doing things is also very stupid lol. Some challenges I even did manually. It takes several hours for them. Really had a sleepless night with my team - [Huntik](https://ctftime.org/team/127635). Anyway, thanks for reading and have a great day!
+Although the challenges of the tournament look simple, they are actually quite difficult and my way of doing things is also very stupid lol. Some challenges I even did manually. It takes several hours for them. Really had a sleepless night with my team - [Huntik](https://ctftime.org/team/127635). Anyway, thanks for reading and have a great day!
 
-- <b> Note : *Data file in my blogs/static/Texsaw2024 dir*
+# Solution 
 
-## Solution 
-### 1. Osint/Geo-Location 
+## 1. Osint/Geo-Location 
 - Challenge :
 
     ![pic1](/assets/posts/TexsawCTF%202024/Geo-location/Chall.png)
@@ -26,23 +23,22 @@ author : [1]
     ![pic3](/assets/posts/TexsawCTF%202024/Geo-location/CheckGGimg.png)
 -  I later identified it as the ```TCC Legacy Kincaid building```. Check GG map and you will see it matches the image. It is located on Legacy Street,Texas.
 
-    -> flag : <b>*texsaw{LEGACY_DRIVE}*</b>
+FLAG: *texsaw{LEGACY_DRIVE}*
 
-
-### 2. Forensics/The Forked Cave
+## 2. Forensics/The Forked Cave
 - Challenge:
 
     ![pic4](/assets/posts/TexsawCTF%202024/The%20Forked%20Cave/Chall.png)
 - The challenge gives us a git directory. Because I've done a similar challenge before, I used ```git log``` to check:
 
     ![pic5](/assets/posts/TexsawCTF%202024/The%20Forked%20Cave/GitLog.png)
-- And using command : ```git diff 02589c89210a9718a03992eec1a7da85e15c7c7d 9c6d7b5d77ba2f73fca83d026de1fe7904ce6e0b``` . We get the flag:
+- And using command : ```git diff 02589c89210a9718a03992eec1a7da85e15c7c7d 9c6d7b5d77ba2f73fca83d026de1fe7904ce6e0b```, we get the flag:
 
     ![pic6](/assets/posts/TexsawCTF%202024/The%20Forked%20Cave/GitDiff.png)
 
-    -> flag: <b>*texsaw{git_g00d_or_git_d3ath}*</b>
+FLAG: *texsaw{git_g00d_or_git_d3ath}*
 
-### 3. Forensics/PS2 games 
+## 3. Forensics/PS2 games 
 - Challenge : 
 
     ![pic7](/assets/posts/TexsawCTF%202024/PS2%20games/Chall.png)
@@ -57,11 +53,9 @@ WHERE Platforms.platform_name = 'Playstation'
 AND YEAR(Games.release_date) BETWEEN 2000 AND 2009;
 ```
 
-- And got the flag 
+FLAG: *texsaw{42}*
 
-    -> flag : <b>*texsaw{42}*</b>
-
-### 4. Crypto/Freaky Flags
+## 4. Crypto/Freaky Flags
 - Challenge :
 
     ![pic8](/assets/posts/TexsawCTF%202024/Freaky%20Flags/chall.png)
@@ -72,11 +66,9 @@ AND YEAR(Games.release_date) BETWEEN 2000 AND 2009;
 
     ![pic10](/assets/posts/TexsawCTF%202024/Freaky%20Flags/Decode.png)
 
-    -> flag : <b>*texsaw{the_flag_is_the_flag!}*</b>
+FLAG: *texsaw{the_flag_is_the_flag!}*
 
-### 5. Osint/TrickyTree
-- Challenge: 
-    
+## 5. Osint/TrickyTree
 - A challenge that I initially thought I would give up on. But when there were about 5-6 hours left in the competition, I tried again. And this time thanks to the predecessors of the challenge, I have [this link](https://www.familytreenow.com/trees/715273) :
 
     ![pic11](/assets/posts/TexsawCTF%202024/TrickyTree/Link.png)
@@ -87,9 +79,9 @@ AND YEAR(Games.release_date) BETWEEN 2000 AND 2009;
 
     ![pic13](/assets/posts/TexsawCTF%202024/TrickyTree/FatherDOB.png)
 
-    -> flag : <b>*texsaw{09_02_1985}*</b>
+FLAG: *texsaw{09_02_1985}*
 
-### 6. Forensics/Market Data
+## 6. Forensics/Market Data
 - Challenge :
 
     ![pic14](/assets/posts/TexsawCTF%202024/Marked%20Data/Chall.png)
@@ -121,6 +113,4 @@ AND YEAR(Games.release_date) BETWEEN 2000 AND 2009;
         revenue_rank = 5; -- Select the 5th ranked game's revenue
     ```
 
-- Submit and it worked: 
-    
-    -> flag : <b>*texsaw{247.16}*</b>
+FLAG: *texsaw{247.16}*
