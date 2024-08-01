@@ -5,7 +5,7 @@ date: 2024-02-05T00:20:50+07:00
 tags: [osint, forensics]
 categories: [ctf]
 author : [1]
-image: https://th.bing.com/th/id/OIP.XsnIyQnnE0Ja3DuT2oJx1AHaHa?rs=1&pid=ImgDetMain
+# image: https://th.bing.com/th/id/OIP.XsnIyQnnE0Ja3DuT2oJx1AHaHa?rs=1&pid=ImgDetMain
 ---
 
 I've been waiting a long time to participate in a CTF tournament since IrisCTF in January. The days passed without CTF slowly like "waiting for the fish to take the bait" haha. Anyway, it's time for me to look back at myself. In this tournament, I only did 2 challenges, the rest were thanks to the reveal at the end of the tournament. Thank you for reading.
