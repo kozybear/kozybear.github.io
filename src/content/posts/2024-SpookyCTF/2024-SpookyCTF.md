@@ -117,7 +117,7 @@ ExternalObjectOwner C:\Users\johndoe\Desktop\system_update.py /C:/Users/johndoe/
 ```
 Để ý sẽ thấy đoạn mã Python với file có tên `system_update.py`, sử dụng mã hóa AES với iv là 16 byte `0x00` và key là `SuperSecretKey12`. Vứt vào Cyberchef cho nó làm phần còn lại.
 
-  ![image](/src/content/posts/2024-SpookyCTF/images/memory%20puzzle/memory_1.png)
+  ![image](./images/memory%20puzzle/memory_1.png)
 
 FLAG: `NICC{S1m0n_Tr4v3rses_T1m3}`
 
@@ -133,7 +133,7 @@ I'd go, but I really don't want to be around those spooky ghost orphans.
 ## Solution
 Bài cung cấp 1 file SVG. Mình check `virustotal` thì không có gì nên yên tâm mở lên thì thấy 1 file ảnh khá to. Ở đây mình thu nhỏ lại cho có cái nhìn toàn cảnh:
 
-  ![image](/src/content/posts/2024-SpookyCTF/images/Wont%20somebody%20think%20of%20the%20children/Think_1.png)
+  ![image](./images/Wont%20somebody%20think%20of%20the%20children/Think_1.png)
 
 Mình thử strings nó thì thấy nó được tạo thành từ hơn 30 tấm ảnh khác nhau với cách thức decode base64. Mình sử dụng đoạn mã sau để decode cho từng tấm 1:
 
@@ -166,7 +166,7 @@ def extract_and_save_images(input_file):
 extract_and_save_images('copy.txt')
 ```
 Mở lên và thấy cờ ở tấm thứ 5:
-  ![image](/src/content/posts/2024-SpookyCTF/images/Wont%20somebody%20think%20of%20the%20children/Think_2.png)
+  ![image](./images/Wont%20somebody%20think%20of%20the%20children/Think_2.png)
 
 FLAG: `NICC{H3ck_th3m_kids_what_@bout_the_council?}`
 
@@ -191,10 +191,10 @@ It coils through currents, a tale confined, Figures of myth, glimpsed and dreame
 ## Solution
 Thử thách cho ta 1 file rar. Extract nó ra mình chỉ thấy 1 file txt. Sau đó mình biết được ở đây nó sử dụng ADS. Mình dùng `ADS Scanner` và nó phát hiện file rar. View stream, mình thấy như sau: 
 
-  ![image](/src/content/posts/2024-SpookyCTF/images/Sandy%20hook%20river/Hook_1.png)
+  ![image](./images/Sandy%20hook%20river/Hook_1.png)
 
 Vứt vào Cyberchef, ta được tiếp 1 file rar. Mình nghĩ nó là file rar ban đầu nhưng cứ thử mở thì thấy nó hỏi pass. Giờ mình mới nhớ lại các từ được bôi đậm trong đề bài, ghép chúng lại, mình được pass là: `WhisperbreathsighopaquestuttersstonesLoch NessChupacabraesteemed`. Việc còn lại là mở lên và lụm cờ thôi.
 
-  ![image](/src/content/posts/2024-SpookyCTF/images/Sandy%20hook%20river/Hook_2.png)
+  ![image](./images/Sandy%20hook%20river/Hook_2.png)
 
 FLAG: `NICC{AD$_$treamS_4re_$o_P0werfUlL}`
