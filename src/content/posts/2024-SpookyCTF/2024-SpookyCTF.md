@@ -7,7 +7,7 @@ image: ./images/banner.png
 draft: false
 ---
 
-# 1. For/Event code hunt
+# For/Event code hunt
 ## Challenge Description
 Maya Elmer managed to seize one of The Consortium's computers, but when she tried to access a critical file, a sudden blue box flashed across her screen, and the file was instantly encrypted. Now, with the clock ticking, participants must step in to decrypt the file and uncover the hidden contents. The Consortium's encryption is tough to crack, and only the most determined will succeed in revealing the secrets locked away within.
 
@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
 FLAG: `NICC{Maya_Elmer_D3t3cts_Mal1c10us_P4yl04d_1n_3v3ntL0gs}`
 
-# 2. For/memory puzzle
+# For/memory puzzle
 ## Challenge Description
 The Consortium has concealed a critical file within a memory dump, protected by layers of digital obfuscation. Led by Simon Letti, participants must sift through the volatile memory landscape to locate a plaintext key that unlocks the encrypted file. Time is of the essence, as Roko's Basilisk threatens to distort the data with each passing moment. Can you unravel the puzzle before the Basilisk intervenes?
 "Basilisk's whisper will not wait" echos through your mind as you enter the file.
@@ -121,7 +121,7 @@ ExternalObjectOwner C:\Users\johndoe\Desktop\system_update.py /C:/Users/johndoe/
 
 FLAG: `NICC{S1m0n_Tr4v3rses_T1m3}`
 
-# 3. For/Wont somebody think of the children
+# For/Wont somebody think of the children
 ## Challenge Description
 If Loab is back, we might need the council to help us out. The problem is that Anna sent Maya looking for them but she still hasn't come back. This is her last known location... Maybe you can help find her.
 I'd go, but I really don't want to be around those spooky ghost orphans.
@@ -170,7 +170,7 @@ Mở lên và thấy cờ ở tấm thứ 5:
 
 FLAG: `NICC{H3ck_th3m_kids_what_@bout_the_council?}`
 
-# 4. For/Sandy hook river
+# For/Sandy hook river
 ## Challenge Description
 While lost in time, returning from Puerto Rico, sailing through a sandy-hook river, Simon Letti found a floating bottle with some weird-looking paper inside, which turned out to be a poem. He's still trying to figure out though, what he can do with that:
 `Whispers` wound 'round rocks, rivers writhe, Meandering murk in the moon's muted might, Threads of thrumming, thistle-thought streams, Glimpsed through the gloom, gone unseen.
